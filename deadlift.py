@@ -72,10 +72,10 @@ def process_image(img):
 def main():
     global counter_model, form_model
 
-    with open('deadlift.pkl', 'rb') as f:
+    with open('models/deadlift.pkl', 'rb') as f:
         counter_model = pickle.load(f)
     
-    with open('lean.pkl', 'rb') as b:
+    with open('models/lean.pkl', 'rb') as b:
         form_model = pickle.load(b)
     
     st.title("deadlift validation app")
